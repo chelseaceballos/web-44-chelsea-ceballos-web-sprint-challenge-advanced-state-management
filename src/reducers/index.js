@@ -42,12 +42,12 @@ const reducer = (state= initialState, action) => {
         case SET_ERROR:
         return {
             ...state,
-            error: "Please fill in all the required fields: Name, Position, and Nickname"
+            error: "Name, position and nickname fields are required."
         }
         default:
             return state
     }
-}
+};
 
 export default reducer;
 
